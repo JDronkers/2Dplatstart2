@@ -21,11 +21,15 @@ MonoBehaviour:
     instantiationMode: 0
   - dependency: {fileID: 6200000, guid: 66867719cf8732d48b06f7dba344cd3c, type: 2}
     instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 7b48f0cb19666764d9c124a80bfbc061, type: 3}
+    instantiationMode: 0
   - dependency: {fileID: 8500123764801621403, guid: a58a7c8219515a5428e859ec9beb53f2, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 2800000, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 2800000, guid: 721d8ea8ba714714ba51cbaaccf79edd, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 6502221088580064848, guid: f3d10e14037632247b7c533782c8459e, type: 3}
     instantiationMode: 0
   templatePipeline: {fileID: 0}
   badge: {fileID: 0}
