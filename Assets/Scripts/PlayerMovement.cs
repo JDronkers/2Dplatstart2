@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     //Your Speed! Horizontal Speed.
     private float speed = 16f;
     //How high your jump goes
-    private float jumpingPower = 16f;
+    private float jumpingPower = 32f;
     
     //Not your concern
     private bool isFacingRight = true;
