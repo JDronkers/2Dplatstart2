@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     //Your Speed! Horizontal Speed.
     private float speed = 16f;
     //How high your jump goes
-    private float jumpingPower = 32f;
+    private float jumpingPower = 30f;
     
     //Not your concern
     private bool isFacingRight = true;
@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     //Not your concern
     private bool hasDoubleJump = false;
     //How much stronger than the original jump the double jump is
-    private float doubleJumpPower = .7f;
+    private float doubleJumpPower = .8f;
 
     private bool isWallSliding;
     //How slow or quick you slide down a wall
@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
     //One of 2 things relating to how long the wallJump is forced. Idrk, please play around with these so you can tell me what is what LOL
     private float wallJumpingDuration = 0.4f;
     //How strong the wallJump is. Numbers are horizontal and vertical respectively
-    private Vector2 wallJumpingPower = new Vector2(4f, 24f);
+    private Vector2 wallJumpingPower = new Vector2(4f, 20f);
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
