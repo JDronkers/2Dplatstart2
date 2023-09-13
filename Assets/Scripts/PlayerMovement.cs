@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float horizontal;
+    private float horizontal;
 
     //Your Speed! Horizontal Speed.
     public float speed = 16f;
