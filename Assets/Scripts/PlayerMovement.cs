@@ -5,38 +5,38 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private float horizontal;
+    public float horizontal;
 
     //Your Speed! Horizontal Speed.
-    private float speed = 16f;
+    public float speed = 16f;
     //How high your jump goes
-    private float jumpingPower = 30f;
+    public float jumpingPower = 30f;
     
     //Not your concern
     private bool isFacingRight = true;
 
     //normal gravity of player
-    private float gravScale = 5f;
+    public float gravScale = 5f;
 
     //fast fall scaling
-    private float fastfallMultiplier = 20f;
+    public float fastfallMultiplier = 20f;
 
     //How low the death zone is. If you want a death material instead that is more adjustable, that can be done as well. 
-    private float deathYValue = -30f;
+    public float deathYValue = -30f;
 
     //Not your concern
     private bool hasDoubleJump = false;
     //How much stronger than the original jump the double jump is
-    private float doubleJumpPower = .8f;
+    public float doubleJumpPower = .8f;
 
-    private bool isWallSliding;
+    public bool isWallSliding;
     //How slow or quick you slide down a wall
-    private float wallSlidingSpeed = 2f;
+    public float wallSlidingSpeed = 2f;
 
     //Only Used for potential wall jump limit rn because wall jumps can climb lol
-    private float totalStamina = 10f;
+    public float totalStamina = 10f;
     //How much stamina wall jumping takes away
-    private float wallJumpStamina = 3f;
+    public float wallJumpStamina = 3f;
 
     //Not your concern
     private float currentStamina;
@@ -46,13 +46,13 @@ public class PlayerMovement : MonoBehaviour
     //Not your concern
     private float wallJumpingDirection;
     //One of 2 things relating to how long the wallJump is forced. Idrk, please play around with these so you can tell me what is what LOL
-    private float wallJumpingTime = 0.1f;
+    public float wallJumpingTime = 0.1f;
     //Not your concern
     private float wallJumpingCounter;
     //One of 2 things relating to how long the wallJump is forced. Idrk, please play around with these so you can tell me what is what LOL
-    private float wallJumpingDuration = 0.4f;
+    public float wallJumpingDuration = 0.4f;
     //How strong the wallJump is. Numbers are horizontal and vertical respectively
-    private Vector2 wallJumpingPower = new Vector2(4f, 20f);
+    public Vector2 wallJumpingPower = new Vector2(4f, 20f);
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
