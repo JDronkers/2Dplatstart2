@@ -15,6 +15,12 @@ public class PlayerMovement : MonoBehaviour
     //Not your concern
     private bool isFacingRight = true;
 
+    //normal gravity of player
+    private float gravScale = 5f;
+
+    //fast fall scaling
+    private float fastfallMultiplier = 20f;
+
     //How low the death zone is. If you want a death material instead that is more adjustable, that can be done as well. 
     private float deathYValue = -30f;
 
@@ -75,6 +81,7 @@ public class PlayerMovement : MonoBehaviour
 
         WallSlide();
         WallJump();
+        FastFall();
 
         if (!isWallJumping)
         {
@@ -123,6 +130,19 @@ public class PlayerMovement : MonoBehaviour
         hasDoubleJump = true;
         currentStamina = totalStamina;
     }
+
+    private void FastFall()
+    {
+        if (Input.GetAxisRaw("Vertical") < 0 && !IsGrounded() && rb.velocity.y < 0f)
+        {
+            rb.gravityScale = gravScale * fastfallMultiplier;
+        }
+        else
+        {
+            rb.gravityScale = gravScale;
+        }
+    }
+
 
     private void WallJump()
     {
